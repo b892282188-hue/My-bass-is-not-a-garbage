@@ -1,0 +1,27 @@
+# 音频一律不进仓库（见 docs/ENGINEERING_RULES.md 第 8、25 条）
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+*.m4a
+*.ogg
+*.caf
+# 唯一的例外：经产品负责人逐个同意的小测试集
+!tests/fixtures/real/*.wav
+
+# 个人数据目录，防止误放
+BassData/
+recordings/
+logs-private/
+
+# 密钥
+.env
+*.p8
+*.p12
+*.mobileprovision
+
+# 系统和编辑器
+.DS_Store
+Thumbs.db
+__pycache__/
